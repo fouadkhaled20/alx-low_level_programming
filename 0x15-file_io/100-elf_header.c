@@ -156,7 +156,7 @@ void print_osabi_more(Elf64_Ehdr h)
  */
 void print_abiversion(Elf64_Ehdr h)
 {
-	printf("  ABI Version:                  %d\n",
+	printf("  ABI Version:                       %d\n",
 		h.e_ident[EI_ABIVERSION]);
 }
 
@@ -169,7 +169,7 @@ void print_type(Elf64_Ehdr h)
 	char *p = (char *)&h.e_type;
 	int i = 0;
 
-	printf("  Type:                             ");
+	printf("  Type:                              ");
 	if (h.e_ident[EI_DATA] == ELFDATA2MSB)
 		i = 1;
 	switch (p[i])

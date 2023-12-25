@@ -1,7 +1,7 @@
 #include "main.h"
 #include <elf.h>
 
-void print_osabi_more(Elf65_Ehdr h);
+void print_osabi_more(Elf64_Ehdr h);
 
 /**
  * print_magic - prints ELF magic bytes
@@ -22,7 +22,7 @@ void print_magic(Elf64_Ehdr h)
  */
 void print_class(Elf64_Ehdr h)
 {
-	printf("  Class:                      ");
+	printf("  Class:                             ");
 	switch (h.e_ident[EI_CLASS])
 	{
 		case ELFCLASS64:

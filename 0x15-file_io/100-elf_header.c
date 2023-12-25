@@ -160,7 +160,8 @@ void print_abiversion(Elf64_Ehdr h)
 		h.e_ident[EI_ABIVERSION]);
 }
 
-/**print_type - prints the ELF type
+/**
+ * print_type - prints the ELF type
  * @h: the ELF header struct
  */
 void print_type(Elf64_Ehdr h)

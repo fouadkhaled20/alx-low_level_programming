@@ -44,7 +44,7 @@ void print_class(Elf64_Ehdr h)
  */
 void print_data(Elf64_Ehdr h)
 {
-	printf("  Data:                          ");
+	printf("  Data:                              ");
 	switch (h.e_ident[EI_DATA])
 	{
 		case ELFDATA2MSB:
@@ -66,7 +66,7 @@ void print_data(Elf64_Ehdr h)
  */
 void print_version(Elf64_Ehdr h)
 {
-	printf("  Version:                         %d", h.e_ident[EI_VERSION]);
+	printf("  Version:                            %d", h.e_ident[EI_VERSION]);
 	switch (h.e_ident[EI_VERSION])
 	{
 		case EV_CURRENT:
@@ -86,7 +86,7 @@ void print_version(Elf64_Ehdr h)
  */
 void print_osabi(Elf64_Ehdr h)
 {
-	printf("  OS/ABI:                        ");
+	printf("  OS/ABI:                          ");
 	switch (h.e_ident[EI_OSABI])
 	{
 		case ELFOSABI_NONE:
@@ -96,7 +96,7 @@ void print_osabi(Elf64_Ehdr h)
 			printf("UNIX - HP-UX");
 			break;
 		case ELFOSABI_NETBSD:
-			printf("UNIX - NETBSD");
+			printf("UNIX - NetBSD");
 			break;
 		case ELFOSABI_LINUX:
 			printf("UNIX - Linux");

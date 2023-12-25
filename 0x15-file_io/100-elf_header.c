@@ -139,7 +139,7 @@ void print_osabi_more(Elf64_Ehdr h)
 			printf("UNIX - OpenBSD");
 			break;
 		case ELFOSABI_STANDALONE:
-			printf("standalone App");
+			printf("Standalone App");
 			break;
 		case ELFOSABI_ARM:
 			printf("ARM");
